@@ -1,256 +1,730 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammed Faiha | Backend & AI Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammed Faiha | Backend and AI Engineer</title>
+<meta name="description" content="Backend and AI engineer building distributed systems, RAG pipelines and LLM services. B.Tech CSE, SRM Institute of Science and Technology.">
+<meta name="author" content="Muhammed Faiha">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Muhammed Faiha | Backend and AI Engineer">
+<meta property="og:description" content="Distributed systems, RAG pipelines and LLM services. Backend and AI engineer based in Chennai, India.">
+<meta property="og:image" content="https://ziyaxoxo.github.io/portfolio/faiha.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://ziyaxoxo.github.io/portfolio/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231c1c1c'/><text x='50' y='68' font-family='Georgia,serif' font-size='58' fill='%23bfa181' text-anchor='middle'>MF</text></svg>">
+
+<!-- Set the stored theme before paint so there is no flash of the wrong mode. -->
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("mf-theme");
+    if (!t) {
+      t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    }
+    document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">MF</a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Faiha<span>.</span></a>
+
+    <div class="nav-right">
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.3 6.3 4.8 4.8M19.2 19.2l-1.5-1.5M17.7 6.3l1.5-1.5M4.8 19.2l1.5-1.5"></path></svg>
+      </button>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <img class="portrait" src="faiha.jpg" width="108" height="108" alt="Muhammed Faiha" loading="eager" decoding="async">
+
+        <div>
+          <h1 class="hero-name">Muhammed Faiha</h1>
+          <p class="hero-role">Backend and AI Engineer</p>
+
+          <ul class="hero-meta">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Chennai, India
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"></path><path d="M4 9h16M9 20V9"></path></svg>
+              B.Tech CSE, SRMIST
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5M4 19h16"></path><path d="M8 15l3.5-4 3 2.5L20 7"></path></svg>
+              CGPA 8.58 / 10
+            </li>
+          </ul>
+
+          <p class="hero-tagline">
+            I build backend systems that stay correct under load, and AI pipelines
+            that stay fast under real traffic. Currently working on LLM services and
+            retrieval infrastructure at FlyRank AI.
+          </p>
+
+          <div class="hero-actions">
+            <!-- PASTE YOUR RESUME URL HERE: this opens Muhammed_Faiha_Resume.pdf in Drive -->
+            <a class="btn btn-primary" href="https://drive.google.com/file/d/1dOBklVKI4LUxMr7Uxa4knS0ohVKwkYxW/view" target="_blank" rel="noopener noreferrer">
+              View Resume
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+            <a class="btn" href="https://github.com/Ziyaxoxo" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"></path></svg>
+              GitHub
+            </a>
+            <a class="btn" href="https://www.linkedin.com/in/muhammed-faiha" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"></path></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats" data-reveal>
+        <div class="stat">
+          <div class="stat-value">1,000+</div>
+          <div class="stat-label">Problems solved</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">5</div>
+          <div class="stat-label">LLM services shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">67%</div>
+          <div class="stat-label">Latency reduction</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Internships</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+
+      <div class="about-grid">
+        <div data-reveal>
+          <p class="lede">
+            I am a Computer Science Engineering student at SRM Institute of Science
+            and Technology, working as a Back-End AI Engineering Intern at FlyRank AI
+            where I ship LLM powered services into production workflows.
+          </p>
+          <p>
+            My interest is in the part of software that has to keep working when
+            things go wrong. That means designing around failure rather than hoping
+            it does not happen: atomic job claiming, transactional outboxes, leases
+            that expire, queues treated as a notification system rather than a
+            source of truth.
+          </p>
+          <p>
+            On the AI side I work on retrieval pipelines and orchestration, mostly
+            with Python, LangChain, LangGraph and FAISS. I care about the boring
+            engineering around the model: latency, structured output that does not
+            break, evaluation, and retrieval that actually returns relevant context.
+          </p>
+          <p>
+            Outside of that I solve competitive programming problems and lead the
+            research group at Logic Play Club.
+          </p>
+        </div>
+
+        <aside data-reveal>
+          <p class="aside-label">What I am aiming for</p>
+          <ul class="focus-list">
+            <li><span class="tick">01</span><span>Backend and platform engineering roles, ideally where AI is part of the product</span></li>
+            <li><span class="tick">02</span><span>Applied AI engineering: RAG systems, agent orchestration, LLM services in production</span></li>
+            <li><span class="tick">03</span><span>Distributed systems work: queues, scheduling, consistency, failure recovery</span></li>
+          </ul>
+
+          <p class="aside-label" style="margin-top:2rem">Currently</p>
+          <ul class="focus-list">
+            <li><span class="tick">·</span><span>Back-End AI Engineering Intern at FlyRank AI</span></li>
+            <li><span class="tick">·</span><span>Open to 2027 full-time roles and strong internships</span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-num">02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="roles">
+
+        <article class="role" data-reveal>
+          <div class="role-period">
+            Jul 2026 &ndash; Present
+            <span class="current">Current</span>
+          </div>
+          <div>
+            <h3 class="role-title">Back-End AI Engineering Intern</h3>
+            <p class="role-org">
+              <a href="https://flyrank.ai" target="_blank" rel="noopener noreferrer">FlyRank AI</a>
+              <span>flyrank.ai</span>
+            </p>
+            <ul class="role-points">
+              <li>Architected <strong>5 LLM powered microservices and API endpoints</strong>, integrating context aware AI into core product workflows.</li>
+              <li>Implemented <strong>RAG pipelines</strong> to extract and process domain context, reducing downstream generation latency by <strong>67%</strong>.</li>
+              <li>Integrated the <strong>Google Gemini API</strong> with automated JSON parsing and exception handling to keep the services reliable in production.</li>
+              <li>Deployed automated testing and <strong>CI/CD routines</strong>, reducing deployment rollback time by <strong>23%</strong>.</li>
             </ul>
+          </div>
+        </article>
+
+        <article class="role" data-reveal>
+          <div class="role-period">Aug 2025 &ndash; Sep 2025</div>
+          <div>
+            <h3 class="role-title">AI/ML Summer Intern</h3>
+            <p class="role-org">
+              <a href="https://edunetfoundation.org" target="_blank" rel="noopener noreferrer">Edunet Foundation</a>
+              <span>edunetfoundation.org</span>
+            </p>
+            <ul class="role-points">
+              <li>Developed an end-to-end <strong>Python ML pipeline</strong> processing <strong>7,900 spatial and temporal features</strong> to assess carbon storage sites.</li>
+              <li>Executed preprocessing and trained classification models on multi-variable datasets spanning <strong>802 districts</strong>.</li>
+              <li>Tuned hyperparameters with scikit-learn, improving predictive accuracy from <strong>56% to 78%</strong>.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="role" data-reveal>
+          <div class="role-period">Oct 2024 &ndash; Dec 2024</div>
+          <div>
+            <h3 class="role-title">Software Engineering Intern</h3>
+            <p class="role-org">
+              <a href="https://www.mitsquare.com" target="_blank" rel="noopener noreferrer">MIT Square</a>
+              <span>mitsquare.com</span>
+            </p>
+            <ul class="role-points">
+              <li>Engineered an interactive <strong>daily quiz engine</strong> for a technical news platform, driving a <strong>20% lift in user engagement</strong>.</li>
+              <li>Optimised platform-wide technical SEO and content layouts, improving organic search visibility.</li>
+              <li>Streamlined release cycles and code review through structured Git branch management workflows.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-num">03</span>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+
+      <div class="featured">
+
+        <article class="project" data-reveal>
+          <div class="project-index">01</div>
+          <div>
+            <h3 class="project-title">
+              Distributed Job Scheduler
+              <span class="tag">Live</span>
+            </h3>
+            <p class="project-blurb">
+              A production style task scheduling engine built around the idea that the
+              database is the source of truth and the queue is only a notification
+              system. Anything the queue loses can be rebuilt by reading the database again.
+            </p>
+            <ul class="project-points">
+              <li>Handles <strong>20 concurrent workers</strong> with asynchronous worker fleets, cron schedules, exponential backoff and a Dead Letter Queue.</li>
+              <li>Prevents race conditions and duplicate execution using <strong>atomic job claiming with FOR UPDATE SKIP LOCKED</strong>.</li>
+              <li>Automated dead worker recovery reached a <strong>99.9% completion rate</strong>.</li>
+            </ul>
+            <ul class="project-stack">
+              <li class="chip">Node.js</li>
+              <li class="chip">TypeScript</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">Prisma</li>
+              <li class="chip">Docker</li>
+              <li class="chip">Redis</li>
+            </ul>
+            <div class="project-links">
+              <a class="link-btn" href="https://distributed-job-scheduler-195c.getvoroa.com/" target="_blank" rel="noopener noreferrer">
+                Live demo
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"></path></svg>
+              </a>
+              <a class="link-btn" href="https://github.com/Ziyaxoxo/Distributed-Job-Scheduler" target="_blank" rel="noopener noreferrer">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project-index">02</div>
+          <div>
+            <h3 class="project-title">
+              Answer-Map AI
+              <span class="tag">Live</span>
+            </h3>
+            <p class="project-blurb">
+              An automated assessment platform that reads handwritten answer sheets.
+              Gemini Vision extracts questions and answers, custom bounding box logic
+              localises each response, and a review UI puts the grading decision in
+              front of a human.
+            </p>
+            <ul class="project-points">
+              <li>Reached <strong>78% accuracy across 25+ scanned exam papers</strong>.</li>
+              <li>Built custom <strong>bounding box answer localisation</strong>, a side-by-side grading UI and interactive remedial AI assistance.</li>
+              <li>Engineered <strong>edge case handlers for out-of-order and unattempted questions</strong> to keep evaluation stable on messy scans.</li>
+            </ul>
+            <ul class="project-stack">
+              <li class="chip">Gemini 2.5 Flash</li>
+              <li class="chip">Express.js</li>
+              <li class="chip">React</li>
+              <li class="chip">TypeScript</li>
+            </ul>
+            <div class="project-links">
+              <a class="link-btn" href="https://answer-map-ai-jf4q.onrender.com/" target="_blank" rel="noopener noreferrer">
+                Live demo
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"></path></svg>
+              </a>
+              <a class="link-btn" href="https://github.com/Ziyaxoxo/Answer-Map_AI" target="_blank" rel="noopener noreferrer">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project-index">03</div>
+          <div>
+            <h3 class="project-title">
+              Requirements-to-Test-Case Generator
+              <span class="tag">Colab</span>
+            </h3>
+            <p class="project-blurb">
+              A retrieval tool that reads SRS documents and OpenAPI specs, then writes
+              the test suite. Embeddings are stored in FAISS and SQLite so retrieval
+              stays low latency, and every generated test traces back to its source.
+            </p>
+            <ul class="project-points">
+              <li>Cut manual test authoring time by <strong>60 to 70%</strong> on a real requirements document.</li>
+              <li>Vectorised source code with <strong>Sentence Transformers</strong>, storing embeddings in <strong>FAISS</strong> and SQLite.</li>
+              <li>Formulated LLM workflows to generate <strong>bidirectional, traceable</strong> unit, integration and security tests.</li>
+            </ul>
+            <ul class="project-stack">
+              <li class="chip">Python</li>
+              <li class="chip">FastAPI</li>
+              <li class="chip">LangChain</li>
+              <li class="chip">FAISS</li>
+              <li class="chip">Sentence Transformers</li>
+            </ul>
+            <div class="project-links">
+              <a class="link-btn" href="https://colab.research.google.com/drive/1zQIMt_v-qjuLKh2Rq6wPTh5RxKJ0OJvM?usp=sharing" target="_blank" rel="noopener noreferrer">
+                Run in Colab
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"></path></svg>
+              </a>
+              <a class="link-btn" href="https://github.com/Ziyaxoxo/software-requirement-to-test-case-generator" target="_blank" rel="noopener noreferrer">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project-index">04</div>
+          <div>
+            <h3 class="project-title">
+              ReachInbox
+              <span class="tag">Live</span>
+              <span class="tag tag-private">Private repo</span>
+            </h3>
+            <p class="project-blurb">
+              A bulk email scheduling engine with durable delivery guarantees. A campaign
+              is written to PostgreSQL in one transaction, then each recipient becomes
+              its own retryable job. A crash never loses work and never resends.
+            </p>
+            <ul class="project-points">
+              <li><strong>Transactional outbox</strong> pattern keeps side effects such as search indexing and Slack alerts from being lost.</li>
+              <li>Atomic claim with <strong>lease expiry</strong> and startup reconciliation every 60 seconds, so restarts recover cleanly.</li>
+              <li><strong>Atomic Redis Lua rate limiting</strong> on whole-hour windows, with the slot returned when a send fails.</li>
+              <li>75 unit and integration tests, 29 Playwright browser tests, plus failure injection and outage suites.</li>
+            </ul>
+            <ul class="project-stack">
+              <li class="chip">Express</li>
+              <li class="chip">TypeScript</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">Drizzle</li>
+              <li class="chip">BullMQ</li>
+              <li class="chip">Redis</li>
+              <li class="chip">Next.js</li>
+              <li class="chip">Elasticsearch</li>
+            </ul>
+            <div class="project-links">
+              <a class="link-btn" href="https://reachinbox-web-s78g.onrender.com" target="_blank" rel="noopener noreferrer">
+                Live demo
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Remaining projects, carousel -->
+      <div style="margin-top:clamp(2.5rem,6vw,4rem)" data-reveal>
+        <div class="carousel-head">
+          <div>
+            <p class="aside-label">Also built</p>
+            <h3 class="serif" style="font-size:clamp(1.15rem,2.4vw,1.35rem)">Other work</h3>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-btn" id="car-prev" type="button" aria-label="Scroll projects left" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5 8 12l7 7"></path></svg>
+            </button>
+            <button class="carousel-btn" id="car-next" type="button" aria-label="Scroll projects right">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
         </div>
+
+        <div class="carousel">
+          <ul class="carousel-track" id="car-track" tabindex="0" aria-label="Other projects, scrollable">
+
+            <li class="mini-card">
+              <h4 class="mini-title">Multi-Threaded C++ Chat Server</h4>
+              <p class="mini-desc">
+                Asynchronous TCP server on Boost.Asio with a thread pool sized to the
+                hardware, a custom binary protocol for text and file transfer over one
+                socket, broadcast, private messaging and O(1) username lookup.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">C++17 &middot; Asio &middot; CMake</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/Multi-thread-cpp-chat" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">Typing Speed Arena</h4>
+              <p class="mini-desc">
+                Full-stack typing game take-home project built with Next.js, Bun,
+                GraphQL Yoga, Prisma and PostgreSQL, with realtime scores and a
+                leaderboard.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Next.js &middot; Bun &middot; GraphQL</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/typing-speed-game-demo" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">Zero Trust SDN Load Balancer</h4>
+              <p class="mini-desc">
+                Zero trust architecture for an OpenFlow based dynamic SDN load
+                balancer, covering trust boundaries, policy enforcement and flow
+                based traffic steering.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python &middot; OpenFlow &middot; SDN</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/zero-trust-archtecture-in-openFlow-based-dynamic-SDN-load-balancer" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">Carbon Storage Classifier</h4>
+              <p class="mini-desc">
+                The ML pipeline behind my Edunet internship: preprocessing and
+                classification across 802 districts and 7,900 features, tuned from
+                56% to 78% accuracy.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python &middot; scikit-learn</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/EcoHealth_Project" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">Smart City Simulation</h4>
+              <p class="mini-desc">
+                Simulation of city traffic and resource flows, modelling how
+                congestion propagates across a road network over time.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">TypeScript &middot; Simulation</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/smart_city_simulation" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">AgriScan</h4>
+              <p class="mini-desc">
+                Multi-plant disease detection built as a computer vision classifier
+                over leaf imagery, served through an interface for field testing.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python &middot; Vision</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/agriscan-multi-plant" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">Heart Disease Prediction</h4>
+              <p class="mini-desc">
+                Classification model over patient health records, with feature
+                importance analysis and a simple interface for non-technical use.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python &middot; scikit-learn</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/heart_disease_prediction" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">Skill Sync</h4>
+              <p class="mini-desc">
+                A Python tool that matches a resume against job descriptions and
+                reports the skills that are missing or under represented.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/Skill-Sync" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-num">04</span>
+        <h2 class="section-title">Toolkit</h2>
+      </div>
+
+      <div class="skill-groups">
+
+        <div class="skill-group" data-reveal>
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>C</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-reveal>
+          <h3>AI and ML</h3>
+          <ul>
+            <li>RAG pipelines</li>
+            <li>LLMs and SLMs</li>
+            <li>Agentic AI</li>
+            <li>Agent orchestration</li>
+            <li>LangGraph</li>
+            <li>LangChain</li>
+            <li>Gemini API</li>
+            <li>FAISS</li>
+            <li>Sentence Transformers</li>
+            <li>scikit-learn</li>
+            <li>NLP</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-reveal>
+          <h3>Backend and data</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>FastAPI</li>
+            <li>Spring Boot</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Redis</li>
+            <li>BullMQ</li>
+            <li>Prisma</li>
+            <li>Drizzle ORM</li>
+            <li>REST APIs</li>
+            <li>JWT</li>
+            <li>Flyway</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-reveal>
+          <h3>Infrastructure</h3>
+          <ul>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Azure</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>CI/CD</li>
+            <li>OpenAPI</li>
+            <li>Playwright</li>
+            <li>Streamlit</li>
+            <li>Gradio</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-reveal>
+          <h3>Systems and networking</h3>
+          <ul>
+            <li>Boost.Asio</li>
+            <li>TCP sockets</li>
+            <li>Async I/O</li>
+            <li>Thread pools</li>
+            <li>CMake</li>
+            <li>Ryu</li>
+            <li>Mininet</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-num">05</span>
+        <h2 class="section-title">Education and record</h2>
+      </div>
+
+      <div class="dual">
+        <div data-reveal>
+          <div class="edu-card">
+            <h3>Bachelor of Technology, Computer Science and Engineering</h3>
+            <p class="edu-meta">SRM Institute of Science and Technology, Chennai &middot; 2023 to 2027</p>
+            <p class="edu-meta">CGPA 8.58 / 10</p>
+          </div>
+
+          <p class="aside-label" style="margin-top:2.25rem">Certifications</p>
+          <ul class="cert-list">
+            <li><span>Intro to Machine Learning, NPTEL and IIT Madras</span><span class="yr">2024</span></li>
+            <li><span>Data Science Foundations, Google</span><span class="yr">2024</span></li>
+            <li><span>Machine Learning Using Python, INI</span><span class="yr">2024</span></li>
+            <li><span>Cloud Computing, NPTEL</span><span class="yr">2025</span></li>
+          </ul>
+        </div>
+
+        <div data-reveal>
+          <p class="aside-label">Beyond the coursework</p>
+          <ul class="ach-list">
+            <li>
+              <span class="tick">01</span>
+              <span><strong>1,000+ algorithmic problems</strong> solved across LeetCode and CodeChef, 2 Star on CodeChef.</span>
+            </li>
+            <li>
+              <span class="tick">02</span>
+              <span><strong>R&D Head at Logic Play Club</strong>, directing student research groups and technical project execution.</span>
+            </li>
+            <li>
+              <span class="tick">03</span>
+              <span><strong>Distributed systems practice</strong> through side projects: schedulers, outbox patterns, worker fleets and dead letter queues.</span>
+            </li>
+            <li>
+              <span class="tick">04</span>
+              <span><strong>Open to 2027 roles.</strong> Available for full-time backend and AI engineering positions, and strong internships.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap contact-inner">
+      <div class="section-head" data-reveal>
+        <span class="section-num">06</span>
+        <h2 class="section-title">Get in touch</h2>
+      </div>
+
+      <p class="lede contact-lede" data-reveal>
+        I am actively looking for backend and AI engineering roles for 2027, and I
+        am happy to talk about anything backend, LLM infrastructure or distributed
+        systems. The fastest way to reach me is email.
+      </p>
+
+      <div class="contact-grid" data-reveal>
+        <a class="contact-cell" href="mailto:mdfaiha.official@gmail.com">
+          <span class="k">Email</span>
+          <span class="v">mdfaiha.official@gmail.com</span>
+        </a>
+        <a class="contact-cell" href="https://github.com/Ziyaxoxo" target="_blank" rel="noopener noreferrer">
+          <span class="k">GitHub</span>
+          <span class="v">github.com/Ziyaxoxo</span>
+        </a>
+        <a class="contact-cell" href="https://www.linkedin.com/in/muhammed-faiha" target="_blank" rel="noopener noreferrer">
+          <span class="k">LinkedIn</span>
+          <span class="v">/in/muhammed-faiha</span>
+        </a>
+        <a class="contact-cell" href="tel:+917338747733">
+          <span class="k">Phone</span>
+          <span class="v">+91 73387 47733</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-sig">Muhammed Faiha &middot; Chennai, India</p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="https://github.com/Ziyaxoxo" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/muhammed-faiha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:mdfaiha.official@gmail.com">Email</a>
+      <a href="#top">Back to top</a>
     </nav>
+  </div>
+</footer>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <img src="faiha pic.jpg" alt="Muhammed Faiha" class="profile-img">
-                <div class="hero-text">
-                    <h1>Muhammed Faiha</h1>
-                    <p class="title">Backend & AI Engineer</p>
-                    <p class="tagline">I build reliable backend systems and AI pipelines that solve real problems.</p>
-                    
-                    <div class="social-links">
-                        <a href="https://github.com/Ziyaxoxo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/muhammed-faiha" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </a>
-                        <a href="mailto:mdfaiha.official@gmail.com" aria-label="Email">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section fade-in">
-            <h2 class="section-title">About</h2>
-            <div class="content-wrapper">
-                <p>Computer Science Engineering student at SRM Institute of Science and Technology (CGPA: 8.58/10). I focus on backend systems, AI/ML pipelines, and building software that works at scale. Currently interning as a Back-End AI Engineer at FlyRank AI.</p>
-            </div>
-        </section>
-
-        <section id="experience" class="section fade-in">
-            <h2 class="section-title">Experience</h2>
-            <div class="content-wrapper">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <h3>Back-End AI Engineering Intern</h3>
-                            <span class="company">FlyRank AI</span>
-                            <span class="date">Jul 2026 - Present</span>
-                        </div>
-                        <ul class="timeline-details">
-                            <li>Architected 5 LLM-powered microservices integrating context-aware AI into core workflows.</li>
-                            <li>Built RAG pipelines reducing downstream generation latency by 67%.</li>
-                            <li>Integrated Google Gemini API with automated JSON parsing for production reliability.</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <h3>AI/ML Summer Intern</h3>
-                            <span class="company">Edunet Foundation</span>
-                            <span class="date">Aug 2025 - Sep 2025</span>
-                        </div>
-                        <ul class="timeline-details">
-                            <li>Built end-to-end ML pipeline processing 7,900 features for carbon-storage site assessment.</li>
-                            <li>Tuned model hyperparameters improving accuracy from 56% to 78%.</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <h3>Software Engineering Intern</h3>
-                            <span class="company">MIT Square</span>
-                            <span class="date">Oct 2024 - Dec 2024</span>
-                        </div>
-                        <ul class="timeline-details">
-                            <li>Built interactive quiz engine driving 20% lift in user engagement.</li>
-                            <li>Optimized platform SEO and content layouts.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section fade-in">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="content-wrapper">
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <h3>Distributed Job Scheduler</h3>
-                        <p class="tech-stack">Node.js, TypeScript, PostgreSQL, Prisma, Docker</p>
-                        <ul class="project-details">
-                            <li>Persistent task scheduling with async worker fleets, 20 concurrent workers.</li>
-                            <li>Atomic job claiming via FOR UPDATE SKIP LOCKED, 99.9% completion rate.</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://distributed-job-scheduler-195c.getvoroa.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                            <a href="https://github.com/Ziyaxoxo/distributed-job-scheduler" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <h3>Answer-Map AI</h3>
-                        <p class="tech-stack">Gemini 2.5 Flash, Express.js, React, TypeScript</p>
-                        <ul class="project-details">
-                            <li>Automated assessment platform parsing handwritten responses, 78% accuracy.</li>
-                            <li>Custom bounding-box answer localization with side-by-side grading UI.</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://answer-map-ai-jf4q.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                            <a href="https://github.com/Ziyaxoxo/answer-map-ai" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <h3>ReachInbox Email Scheduler</h3>
-                        <p class="tech-stack">Express, TypeScript, PostgreSQL, BullMQ, Redis, Next.js</p>
-                        <ul class="project-details">
-                            <li>Bulk email scheduling with durable delivery guarantees.</li>
-                            <li>Transactional outbox pattern, atomic claims with lease expiry, Lua-based rate limiting.</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://reachinbox-web-s78g.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <h3>Requirements-to-Test-Case Generator</h3>
-                        <p class="tech-stack">Python, FastAPI, LangChain, FAISS</p>
-                        <ul class="project-details">
-                            <li>RAG tool that ingests SRS docs and OpenAPI specs to auto-generate test suites.</li>
-                            <li>Cut manual test authoring time by 60-70%.</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/1zQIMt_v-qjuLKh2Rq6wPTh5RxKJ0OJvM?usp=sharing" target="_blank" rel="noopener noreferrer">Colab Demo</a>
-                            <a href="https://github.com/Ziyaxoxo/requirements-to-test-case-generator" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 class="subsection-title">Other Projects</h3>
-                <div class="other-projects-list">
-                    <div class="other-project-item">
-                        <div class="other-project-header">
-                            <h4>Multi-Threaded C++ Chat Server</h4>
-                            <span class="tech-stack">C++17, Boost.Asio, CMake, TCP</span>
-                        </div>
-                        <p>Async TCP chat server with thread pool, custom binary protocol, file transfers.</p>
-                        <a href="https://github.com/Ziyaxoxo/multi-threaded-chat-server" class="inline-link" target="_blank" rel="noopener noreferrer">View Repository</a>
-                    </div>
-                    
-                    <div class="other-project-item">
-                        <div class="other-project-header">
-                            <h4>Carbon Storage Site Classifier</h4>
-                            <span class="tech-stack">Python, scikit-learn</span>
-                        </div>
-                        <p>ML pipeline for 802-district carbon storage assessment.</p>
-                        <a href="https://github.com/Ziyaxoxo/carbon-storage-site-classifier" class="inline-link" target="_blank" rel="noopener noreferrer">View Repository</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section fade-in">
-            <h2 class="section-title">Skills</h2>
-            <div class="content-wrapper">
-                <div class="skills-category">
-                    <h3>Languages</h3>
-                    <div class="pill-container">
-                        <span class="skill-pill">Python</span>
-                        <span class="skill-pill">TypeScript</span>
-                        <span class="skill-pill">JavaScript</span>
-                        <span class="skill-pill">C++</span>
-                        <span class="skill-pill">Java</span>
-                        <span class="skill-pill">C</span>
-                        <span class="skill-pill">SQL</span>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>AI/ML</h3>
-                    <div class="pill-container">
-                        <span class="skill-pill">RAG Pipelines</span>
-                        <span class="skill-pill">LLMs</span>
-                        <span class="skill-pill">Agentic AI</span>
-                        <span class="skill-pill">LangGraph</span>
-                        <span class="skill-pill">LangChain</span>
-                        <span class="skill-pill">Gemini API</span>
-                        <span class="skill-pill">FAISS</span>
-                        <span class="skill-pill">Sentence Transformers</span>
-                        <span class="skill-pill">scikit-learn</span>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Backend</h3>
-                    <div class="pill-container">
-                        <span class="skill-pill">Node.js</span>
-                        <span class="skill-pill">Express.js</span>
-                        <span class="skill-pill">FastAPI</span>
-                        <span class="skill-pill">Spring Boot</span>
-                        <span class="skill-pill">PostgreSQL</span>
-                        <span class="skill-pill">Redis</span>
-                        <span class="skill-pill">BullMQ</span>
-                        <span class="skill-pill">Prisma</span>
-                        <span class="skill-pill">REST APIs</span>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Infrastructure</h3>
-                    <div class="pill-container">
-                        <span class="skill-pill">Docker</span>
-                        <span class="skill-pill">Kubernetes</span>
-                        <span class="skill-pill">Azure</span>
-                        <span class="skill-pill">Git</span>
-                        <span class="skill-pill">Linux</span>
-                        <span class="skill-pill">CI/CD</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="fade-in">
-        <div class="footer-content">
-            <p>&copy; <span id="year"></span> Muhammed Faiha. All rights reserved.</p>
-            <p class="footer-note">Built with vanilla HTML, CSS, and JS. No frameworks needed.</p>
-            <div class="footer-links">
-                <a href="https://github.com/Ziyaxoxo" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://www.linkedin.com/in/muhammed-faiha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="mailto:mdfaiha.official@gmail.com">Email</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
