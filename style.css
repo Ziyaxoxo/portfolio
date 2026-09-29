@@ -1,6 +1,6 @@
 /* ============================================================
    Muhammed Faiha | Portfolio
-   Design system: elegant monochromatic, understated, editorial.
+   Design system: minimal technical portfolio, warm depth.
    Light and dark modes. No flashy motion, no em dashes.
    ============================================================ */
 
@@ -18,42 +18,44 @@
   --transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, opacity 160ms ease;
 }
 
-/* Dark (default) */
+/* Dark (default) - deeper, richer */
 :root,
 [data-theme="dark"] {
-  --bg: #1c1c1c;
-  --bg-raised: #212121;
-  --surface: #262626;
-  --surface-hover: #2b2b2b;
-  --text: #d4c5b0;
-  --text-strong: #e6dac6;
-  --text-muted: #9c9384;
-  --accent: #bfa181;
-  --accent-soft: #a58e71;
-  --line: #33302b;
-  --line-strong: #45403a;
-  --on-accent: #1c1c1c;
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --focus: #bfa181;
+  --bg: #161513;
+  --bg-raised: #1d1c19;
+  --surface: #23211e;
+  --surface-hover: #2a2723;
+  --text: #dcccaa;
+  --text-strong: #e8dbc4;
+  --text-muted: #9b8f7a;
+  --accent: #c9b07a;
+  --accent-soft: #a68f5f;
+  --accent-deep: #8b764f;
+  --line: #2f2b26;
+  --line-strong: #3f3932;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --focus: #c9b07a;
+  --on-accent: #12110f;
   color-scheme: dark;
 }
 
-/* Light */
+/* Light - warmer, not flat */
 [data-theme="light"] {
-  --bg: #f7f5f1;
-  --bg-raised: #fffdfa;
+  --bg: #faf7f2;
+  --bg-raised: #fefdf9;
   --surface: #ffffff;
-  --surface-hover: #f2efe9;
-  --text: #4a453d;
-  --text-strong: #262320;
-  --text-muted: #6f6759;
-  --accent: #7d6444;
+  --surface-hover: #f2efe8;
+  --text: #3d3830;
+  --text-strong: #1f1c16;
+  --text-muted: #655d4e;
+  --accent: #8d6f3e;
   --accent-soft: #7d6749;
-  --line: #e2ddd3;
-  --line-strong: #cfc8ba;
+  --accent-deep: #725836;
+  --line: #e0d8cc;
+  --line-strong: #cbbfae;
+  --shadow: 0 2px 8px rgba(60, 50, 35, 0.1), 0 1px 2px rgba(60, 50, 35, 0.06);
+  --focus: #8d6f3e;
   --on-accent: #fdfbf7;
-  --shadow: 0 1px 2px rgba(60, 50, 35, 0.08);
-  --focus: #8a6f4e;
   color-scheme: light;
 }
 
@@ -356,10 +358,47 @@ h4 {
 }
 
 .hero-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
   max-width: 100%;
+}
+
+.portrait {
+  width: clamp(84px, 12vw, 108px);
+  height: clamp(84px, 12vw, 108px);
+  object-fit: cover;
+  object-position: center 22%;
+  border-radius: 50%;
+  /* Duotone treatment: map darks to accent-deep, lights to accent */
+  filter: grayscale(1) contrast(1.15) sepia(1)
+          hue-rotate(30deg) saturate(3.5) brightness(0.95);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow);
+  transition: filter 350ms ease, border-color 350ms ease;
+}
+
+.portrait:hover {
+  filter: grayscale(0.15) contrast(1.05) sepia(0.3)
+          hue-rotate(30deg) saturate(2) brightness(1);
+  border-color: var(--accent-soft);
+}
+
+@media (max-width: 560px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .portrait {
+    margin: 0 auto 1.25rem;
+  }
+  .hero-meta {
+    justify-content: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
 }
 
 .hero-name {
@@ -1185,6 +1224,7 @@ a.contact-cell:hover .v {
     --text-muted: #4a4a4a;
     --accent: #6b5636;
     --accent-soft: #57452c;
+    --accent-deep: #54432e;
     --on-accent: #ffffff;
     --line: #cccccc;
     --line-strong: #999999;
@@ -1196,7 +1236,8 @@ a.contact-cell:hover .v {
   .project-links,
   .footer-links,
   .skip,
-  .theme-toggle {
+  .theme-toggle,
+  .portrait {
     display: none !important;
   }
 
