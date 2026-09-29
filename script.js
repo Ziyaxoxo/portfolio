@@ -116,6 +116,31 @@
     syncButtons();
   }
 
+  /* ---------- Auto-hide header on scroll ---------- */
+  var header = document.querySelector(".site-header");
+  var lastScrollY = window.scrollY;
+  var scrollThreshold = 10;
+  var headerHidden = false;
+
+  function onScroll() {
+    var currentY = window.scrollY;
+    var delta = currentY - lastScrollY;
+
+    if (Math.abs(delta) < scrollThreshold) return;
+
+    if (delta > 0 && currentY > header.offsetHeight && !headerHidden) {
+      header.classList.add("is-hidden");
+      headerHidden = true;
+    } else if (delta < 0 && headerHidden) {
+      header.classList.remove("is-hidden");
+      headerHidden = false;
+    }
+
+    lastScrollY = currentY;
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+
   /* ---------- Scroll spy for nav ---------- */
   var sections = ["about", "experience", "work", "skills", "contact"];
   var navAnchors = {};

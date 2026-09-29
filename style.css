@@ -206,13 +206,21 @@ h4 {
 
 /* ---------- Header / Nav ---------- */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: var(--border);
+  transform: translateY(0);
+  transition: transform 220ms ease, background-color 200ms ease, border-color 200ms ease;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
 }
 
 .nav {
