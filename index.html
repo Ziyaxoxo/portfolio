@@ -71,8 +71,6 @@
   <section class="hero" id="top">
     <div class="wrap">
       <div class="hero-grid">
-        <img class="portrait" src="faiha.jpg" width="108" height="108" alt="Muhammed Faiha" loading="eager" decoding="async">
-
         <div>
           <h1 class="hero-name">Muhammed Faiha</h1>
           <p class="hero-role">Backend and AI Engineer</p>
@@ -116,22 +114,18 @@
         </div>
       </div>
 
-      <div class="stats" data-reveal>
-        <div class="stat">
-          <div class="stat-value">1,000+</div>
-          <div class="stat-label">Problems solved</div>
+      <div class="principles" data-reveal>
+        <div class="principle">
+          <span class="p-label">State</span>
+          <p>The database is the source of truth. A queue is only a notification, so losing it costs nothing.</p>
         </div>
-        <div class="stat">
-          <div class="stat-value">5</div>
-          <div class="stat-label">LLM services shipped</div>
+        <div class="principle">
+          <span class="p-label">Output</span>
+          <p>A model call that returns prose is unfinished. I parse it, validate it and handle the shape it actually returns.</p>
         </div>
-        <div class="stat">
-          <div class="stat-value">67%</div>
-          <div class="stat-label">Latency reduction</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">3</div>
-          <div class="stat-label">Internships</div>
+        <div class="principle">
+          <span class="p-label">Measure</span>
+          <p>Latency before and after, not in the abstract. An improvement nobody can reproduce is a rumour.</p>
         </div>
       </div>
     </div>
@@ -149,40 +143,40 @@
         <div data-reveal>
           <p class="lede">
             I am a Computer Science Engineering student at SRM Institute of Science
-            and Technology, working as a Back-End AI Engineering Intern at FlyRank AI
+            and Technology, working as a Back-End AI Engineering Intern at FlyRank AI,
             where I ship LLM powered services into production workflows.
           </p>
           <p>
-            My interest is in the part of software that has to keep working when
-            things go wrong. That means designing around failure rather than hoping
-            it does not happen: atomic job claiming, transactional outboxes, leases
-            that expire, queues treated as a notification system rather than a
-            source of truth.
+            Most of what I build sits on the server side: schedulers, workers, queues,
+            databases and the APIs in front of them. I like problems where the
+            obvious implementation is the one that quietly loses data at 3am, and
+            the job is to notice that before a user does.
           </p>
           <p>
-            On the AI side I work on retrieval pipelines and orchestration, mostly
-            with Python, LangChain, LangGraph and FAISS. I care about the boring
-            engineering around the model: latency, structured output that does not
-            break, evaluation, and retrieval that actually returns relevant context.
+            The AI work is the same discipline applied to a different component. I
+            build retrieval pipelines and orchestration with Python, LangChain,
+            LangGraph and FAISS, and I spend most of my effort on the parts that are
+            not the model: whether it returns the right context, whether the output
+            parses, and what it costs per request.
           </p>
           <p>
-            Outside of that I solve competitive programming problems and lead the
+            Outside of work I solve competitive programming problems and lead the
             research group at Logic Play Club.
           </p>
         </div>
 
         <aside data-reveal>
-          <p class="aside-label">What I am aiming for</p>
+          <p class="aside-label">Where I focus</p>
           <ul class="focus-list">
-            <li><span class="tick">01</span><span>Backend and platform engineering roles, ideally where AI is part of the product</span></li>
-            <li><span class="tick">02</span><span>Applied AI engineering: RAG systems, agent orchestration, LLM services in production</span></li>
-            <li><span class="tick">03</span><span>Distributed systems work: queues, scheduling, consistency, failure recovery</span></li>
+            <li><span class="tick">01</span><span>Backend and platform work, especially where AI is part of the product</span></li>
+            <li><span class="tick">02</span><span>Applied AI: retrieval systems, agent orchestration, LLM services in production</span></li>
+            <li><span class="tick">03</span><span>Distributed systems: scheduling, consistency, recovery from failure</span></li>
           </ul>
 
           <p class="aside-label" style="margin-top:2rem">Currently</p>
           <ul class="focus-list">
-            <li><span class="tick">·</span><span>Back-End AI Engineering Intern at FlyRank AI</span></li>
-            <li><span class="tick">·</span><span>Open to 2027 full-time roles and strong internships</span></li>
+            <li><span class="tick">&middot;</span><span>Back-End AI Engineering Intern at FlyRank AI</span></li>
+            <li><span class="tick">&middot;</span><span>B.Tech CSE, graduating 2027</span></li>
           </ul>
         </aside>
       </div>
@@ -432,8 +426,8 @@
               <h4 class="mini-title">Multi-Threaded C++ Chat Server</h4>
               <p class="mini-desc">
                 Asynchronous TCP server on Boost.Asio with a thread pool sized to the
-                hardware, a custom binary protocol for text and file transfer over one
-                socket, broadcast, private messaging and O(1) username lookup.
+                hardware, a custom binary protocol carrying text and files over a
+                single socket, broadcast, private messaging and O(1) username lookup.
               </p>
               <div class="mini-foot">
                 <span class="mini-stack">C++17 &middot; Asio &middot; CMake</span>
@@ -444,39 +438,104 @@
             <li class="mini-card">
               <h4 class="mini-title">Typing Speed Arena</h4>
               <p class="mini-desc">
-                Full-stack typing game take-home project built with Next.js, Bun,
-                GraphQL Yoga, Prisma and PostgreSQL, with realtime scores and a
-                leaderboard.
+                Take-home project for a product engineering role. A Next.js SPA with
+                a keyboard focus engine, a GraphQL layer and penalty based scoring
+                over randomised character sequences.
               </p>
               <div class="mini-foot">
-                <span class="mini-stack">Next.js &middot; Bun &middot; GraphQL</span>
+                <span class="mini-stack">Next.js &middot; GraphQL &middot; TS</span>
+                <!-- PASTE THE TYPING SPEED GAME LIVE URL HERE ONCE DEPLOYED -->
                 <a class="mini-link" href="https://github.com/Ziyaxoxo/typing-speed-game-demo" target="_blank" rel="noopener noreferrer">Repo</a>
               </div>
             </li>
 
             <li class="mini-card">
-              <h4 class="mini-title">Zero Trust SDN Load Balancer</h4>
+              <h4 class="mini-title">SkillSync</h4>
+              <p class="mini-desc">
+                Resume and ATS analysis tool. TF-IDF vectorisation and cosine
+                similarity score a resume against a job description, extract
+                keywords and surface the skill gaps worth closing.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python &middot; NLP &middot; sklearn</span>
+                <span class="mini-links">
+                  <a class="mini-link" href="https://skill-sync-v2.streamlit.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a class="mini-link" href="https://github.com/Ziyaxoxo/Skill-Sync" target="_blank" rel="noopener noreferrer">Repo</a>
+                </span>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">EcoHealth</h4>
+              <p class="mini-desc">
+                Climate risk and public health monitoring. Classifies health risk
+                from PM2.5, PM10, NO2 and SO2 levels, with a what-if policy simulator
+                and a live pollution map of India.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python &middot; Streamlit &middot; SQL</span>
+                <span class="mini-links">
+                  <a class="mini-link" href="https://ecohealthproject.streamlit.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a class="mini-link" href="https://github.com/Ziyaxoxo/EcoHealth_Project" target="_blank" rel="noopener noreferrer">Repo</a>
+                </span>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">AuraSpace</h4>
+              <p class="mini-desc">
+                A study and wellness web app. Pomodoro focus sessions with a progress
+                ring, activity and water tracking, and a dashboard that keeps study
+                time and health metrics in one place.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">CSS &middot; JavaScript &middot; Web</span>
+                <span class="mini-links">
+                  <a class="mini-link" href="https://ziyaxoxo.github.io/AuraSpace/" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a class="mini-link" href="https://github.com/Ziyaxoxo/AuraSpace" target="_blank" rel="noopener noreferrer">Repo</a>
+                </span>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">Heart Disease Risk</h4>
+              <p class="mini-desc">
+                Estimates ten year coronary heart disease risk from clinical inputs,
+                with an automatic BMI engine and a responsive layout built for
+                non technical use.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python &middot; Streamlit &middot; sklearn</span>
+                <span class="mini-links">
+                  <a class="mini-link" href="https://heart-disease-prediction-software.streamlit.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a class="mini-link" href="https://github.com/Ziyaxoxo/heart_disease_prediction" target="_blank" rel="noopener noreferrer">Repo</a>
+                </span>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">AgriScan</h4>
+              <p class="mini-desc">
+                Plant disease detection from leaf photographs, trained across potato,
+                tomato and pepper images and served with treatment guidance for each
+                diagnosis.
+              </p>
+              <div class="mini-foot">
+                <span class="mini-stack">Python &middot; OpenCV &middot; Streamlit</span>
+                <a class="mini-link" href="https://github.com/Ziyaxoxo/agriscan-multi-plant" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </li>
+
+            <li class="mini-card">
+              <h4 class="mini-title">Zero Trust SDN Balancer</h4>
               <p class="mini-desc">
                 Zero trust architecture for an OpenFlow based dynamic SDN load
                 balancer, covering trust boundaries, policy enforcement and flow
                 based traffic steering.
               </p>
               <div class="mini-foot">
-                <span class="mini-stack">Python &middot; OpenFlow &middot; SDN</span>
+                <span class="mini-stack">Python &middot; OpenFlow &middot; Ryu</span>
                 <a class="mini-link" href="https://github.com/Ziyaxoxo/zero-trust-archtecture-in-openFlow-based-dynamic-SDN-load-balancer" target="_blank" rel="noopener noreferrer">Repo</a>
-              </div>
-            </li>
-
-            <li class="mini-card">
-              <h4 class="mini-title">Carbon Storage Classifier</h4>
-              <p class="mini-desc">
-                The ML pipeline behind my Edunet internship: preprocessing and
-                classification across 802 districts and 7,900 features, tuned from
-                56% to 78% accuracy.
-              </p>
-              <div class="mini-foot">
-                <span class="mini-stack">Python &middot; scikit-learn</span>
-                <a class="mini-link" href="https://github.com/Ziyaxoxo/EcoHealth_Project" target="_blank" rel="noopener noreferrer">Repo</a>
               </div>
             </li>
 
@@ -489,42 +548,6 @@
               <div class="mini-foot">
                 <span class="mini-stack">TypeScript &middot; Simulation</span>
                 <a class="mini-link" href="https://github.com/Ziyaxoxo/smart_city_simulation" target="_blank" rel="noopener noreferrer">Repo</a>
-              </div>
-            </li>
-
-            <li class="mini-card">
-              <h4 class="mini-title">AgriScan</h4>
-              <p class="mini-desc">
-                Multi-plant disease detection built as a computer vision classifier
-                over leaf imagery, served through an interface for field testing.
-              </p>
-              <div class="mini-foot">
-                <span class="mini-stack">Python &middot; Vision</span>
-                <a class="mini-link" href="https://github.com/Ziyaxoxo/agriscan-multi-plant" target="_blank" rel="noopener noreferrer">Repo</a>
-              </div>
-            </li>
-
-            <li class="mini-card">
-              <h4 class="mini-title">Heart Disease Prediction</h4>
-              <p class="mini-desc">
-                Classification model over patient health records, with feature
-                importance analysis and a simple interface for non-technical use.
-              </p>
-              <div class="mini-foot">
-                <span class="mini-stack">Python &middot; scikit-learn</span>
-                <a class="mini-link" href="https://github.com/Ziyaxoxo/heart_disease_prediction" target="_blank" rel="noopener noreferrer">Repo</a>
-              </div>
-            </li>
-
-            <li class="mini-card">
-              <h4 class="mini-title">Skill Sync</h4>
-              <p class="mini-desc">
-                A Python tool that matches a resume against job descriptions and
-                reports the skills that are missing or under represented.
-              </p>
-              <div class="mini-foot">
-                <span class="mini-stack">Python</span>
-                <a class="mini-link" href="https://github.com/Ziyaxoxo/Skill-Sync" target="_blank" rel="noopener noreferrer">Repo</a>
               </div>
             </li>
 
@@ -656,19 +679,19 @@
           <ul class="ach-list">
             <li>
               <span class="tick">01</span>
-              <span><strong>1,000+ algorithmic problems</strong> solved across LeetCode and CodeChef, 2 Star on CodeChef.</span>
+              <span><strong>1,000+ algorithmic problems</strong> solved across LeetCode and CodeChef. 2 Star on CodeChef.</span>
             </li>
             <li>
               <span class="tick">02</span>
-              <span><strong>R&D Head at Logic Play Club</strong>, directing student research groups and technical project execution.</span>
+              <span><strong>R&D Head at Logic Play Club,</strong> directing student research groups and technical project execution.</span>
             </li>
             <li>
               <span class="tick">03</span>
-              <span><strong>Distributed systems practice</strong> through side projects: schedulers, outbox patterns, worker fleets and dead letter queues.</span>
+              <span><strong>Failure modes rehearsed, not just features.</strong> Failure injection, outage and invariant test suites across the scheduler and the mail queue.</span>
             </li>
             <li>
               <span class="tick">04</span>
-              <span><strong>Open to 2027 roles.</strong> Available for full-time backend and AI engineering positions, and strong internships.</span>
+              <span><strong>Shipping habit:</strong> most side projects here are deployed, not just committed.</span>
             </li>
           </ul>
         </div>
@@ -685,9 +708,9 @@
       </div>
 
       <p class="lede contact-lede" data-reveal>
-        I am actively looking for backend and AI engineering roles for 2027, and I
-        am happy to talk about anything backend, LLM infrastructure or distributed
-        systems. The fastest way to reach me is email.
+        Email is the fastest way to reach me. I answer anything about backend
+        systems, LLM infrastructure or distributed work, and I am glad to walk
+        through the design decisions behind anything on this page.
       </p>
 
       <div class="contact-grid" data-reveal>
