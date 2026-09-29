@@ -141,8 +141,40 @@
 
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  /* ---------- Takes carousel ---------- */
+  var takesTrack = document.getElementById("takes-track");
+  var takesPrev = document.getElementById("takes-prev");
+  var takesNext = document.getElementById("takes-next");
+
+  if (takesTrack && takesPrev && takesNext) {
+    var takesStep = function () {
+      var card = takesTrack.querySelector(".meme-card");
+      if (!card) return takesTrack.clientWidth * 0.8;
+      var gap = parseFloat(getComputedStyle(takesTrack).gap || "16") || 16;
+      return card.getBoundingClientRect().width + gap;
+    };
+
+    var takesSync = function () {
+      var max = takesTrack.scrollWidth - takesTrack.clientWidth - 1;
+      takesPrev.disabled = takesTrack.scrollLeft <= 1;
+      takesNext.disabled = takesTrack.scrollLeft >= max;
+    };
+
+    takesPrev.addEventListener("click", function () {
+      takesTrack.scrollBy({ left: -takesStep(), behavior: reduceMotion ? "auto" : "smooth" });
+    });
+
+    takesNext.addEventListener("click", function () {
+      takesTrack.scrollBy({ left: takesStep(), behavior: reduceMotion ? "auto" : "smooth" });
+    });
+
+    takesTrack.addEventListener("scroll", takesSync, { passive: true });
+    window.addEventListener("resize", takesSync);
+    takesSync();
+  }
+
   /* ---------- Scroll spy for nav ---------- */
-  var sections = ["takes", "about", "personality", "experience", "work", "skills", "contact"];
+  var sections = ["takes", "about", "experience", "work", "skills", "contact"];
   var navAnchors = {};
 
   sections.forEach(function (id) {
