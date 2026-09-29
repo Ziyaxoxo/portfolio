@@ -142,7 +142,7 @@
   window.addEventListener("scroll", onScroll, { passive: true });
 
   /* ---------- Scroll spy for nav ---------- */
-  var sections = ["about", "experience", "work", "skills", "contact"];
+  var sections = ["takes", "about", "personality", "experience", "work", "skills", "contact"];
   var navAnchors = {};
 
   sections.forEach(function (id) {
