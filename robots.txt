@@ -1,0 +1,5 @@
+# robots.txt for ziyaxoxo.github.io/portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://ziyaxoxo.github.io/portfolio/sitemap.xml
