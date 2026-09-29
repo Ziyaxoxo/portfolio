@@ -2,14 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Navigation Toggle
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
-    
+
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
         });
 
-        // Close mobile menu when a link is clicked
         const links = navLinks.querySelectorAll('a');
         links.forEach(link => {
             link.addEventListener('click', () => {
@@ -25,26 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
         yearElement.textContent = new Date().getFullYear();
     }
 
-    // Scroll Fade-in Animation using Intersection Observer
+    // Scroll Fade-in Animation
     const fadeElements = document.querySelectorAll('.fade-in');
-    
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
-    };
 
-    const fadeObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                // Optional: stop observing once faded in to keep it visible
-                observer.unobserve(entry.target);
-            }
+    if ('IntersectionObserver' in window) {
+        const fadeObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { root: null, rootMargin: '0px 0px 50px 0px', threshold: 0.05 });
+
+        // Use rAF to let the browser finish layout before observing
+        requestAnimationFrame(() => {
+            fadeElements.forEach(el => fadeObserver.observe(el));
         });
-    }, observerOptions);
+    } else {
+        // Fallback: just show everything
+        fadeElements.forEach(el => el.classList.add('visible'));
+    }
 
-    fadeElements.forEach(element => {
-        fadeObserver.observe(element);
-    });
+    // Safety net: if anything is still invisible after 1.5s, force it visible
+    setTimeout(() => {
+        fadeElements.forEach(el => el.classList.add('visible'));
+    }, 1500);
 });
