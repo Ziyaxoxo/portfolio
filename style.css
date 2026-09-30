@@ -490,13 +490,7 @@ h4 {
   transform: translateY(-2px);
 }
 
-.meme-card img { width: 100%; aspect-ratio: 16 / 10; display: block; object-fit: cover; object-position: bottom; background: var(--surface); }
-
-.meme-card:nth-child(1) img { object-position: 50% 85%; }
-
-.meme-card:nth-child(2) img { object-position: 50% 55%; }
-
-.meme-card:nth-child(3) img { object-position: 50% 100%; }
+.meme-card img { width: 100%; aspect-ratio: 16 / 10; display: block; object-fit: cover; background: var(--surface); }
 
 #takes-track {
   display: flex;
