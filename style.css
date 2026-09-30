@@ -474,13 +474,14 @@ h4 {
 /* ---------- Takes / Memes (carousel) ---------- */
 .meme-card {
   flex: 0 0 auto;
-  width: clamp(300px, 45vw, 440px);
+  width: clamp(260px, 35vw, 340px);
   border-radius: 8px;
   border: var(--border);
   overflow: hidden;
   background: var(--surface);
   opacity: 0.9;
   transition: opacity 200ms ease, border-color 200ms ease, transform 200ms ease;
+  scroll-snap-align: start;
 }
 
 .meme-card:hover {
@@ -491,14 +492,23 @@ h4 {
 
 .meme-card img {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 10;
   display: block;
   object-fit: cover;
   background: var(--surface);
 }
 
 #takes-track {
+  display: flex;
   gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-bottom: 0.5rem;
+}
+
+#takes-track::-webkit-scrollbar {
+  display: none;
 }
 
 /* ---------- About ---------- */
