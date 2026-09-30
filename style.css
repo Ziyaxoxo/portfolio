@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    Muhammed Faiha | Portfolio
    Design system: minimal technical portfolio, warm depth.
    Light and dark modes. No flashy motion, no em dashes.
@@ -490,11 +490,7 @@ h4 {
   transform: translateY(-2px);
 }
 
-.meme-card img {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  display: block;
-  object-fit: cover;
+.meme-card img { width: 100%; aspect-ratio: 16 / 10; display: block; object-fit: cover; object-position: bottom;
   object-position: bottom;
   background: var(--surface);
 }
@@ -1258,3 +1254,4 @@ a.contact-cell:hover .v {
     word-break: break-all;
   }
 }
+
