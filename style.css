@@ -474,8 +474,8 @@ h4 {
 /* ---------- Takes / Memes (carousel) ---------- */
 .meme-card {
   flex: 0 0 auto;
-  width: clamp(280px, 45vw, 420px);
-  border-radius: var(--radius);
+  width: clamp(300px, 45vw, 440px);
+  border-radius: 8px;
   border: var(--border);
   overflow: hidden;
   background: var(--surface);
@@ -491,9 +491,9 @@ h4 {
 
 .meme-card img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3 / 2;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   background: var(--surface);
 }
 
