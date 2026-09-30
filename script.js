@@ -174,7 +174,7 @@
   }
 
   /* ---------- Scroll spy for nav ---------- */
-  var sections = ["takes", "about", "experience", "work", "skills", "contact"];
+  var sections = ["about", "experience", "work", "skills", "contact"];
   var navAnchors = {};
 
   sections.forEach(function (id) {
